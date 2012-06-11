@@ -1,0 +1,60 @@
+[
+	{ "keys": ["super+shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Add new line and semi-colon.sublime-macro"} },
+    { "keys": ["ctrl+shift+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["super+alt+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Add semi-colon.sublime-macro"} },
+	{ "keys": ["ctrl+super+w"], "command": "close_all" },
+	{ "keys": ["super+shift+h"], "command": "goto_documentation" },
+	   { "keys": ["enter"], "command": "jsdocs", "context" :
+        [
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true, "match_all": "true" },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*\\/\\*{2}$", "match_all": true }
+        ]
+    },
+    { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n${TM_CURRENT_LINE/^\\s*(\\*\\s*).*$/$1/}"}, "context":
+        [
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+            { "key": "selector", "operator" : "equal", "operand" : "comment.block.documentation"},
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*\\*", "match_all": true }
+        ]
+    },
+    { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n${TM_CURRENT_LINE/^\\s*(\\/\\/\\s*).*$/$1/}"}, "context":
+        [
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "setting.jsdocs_extend_double_slash", "operator": "equal", "operand": true, "match_all": true},
+            { "key": "selector", "operator" : "equal", "operand" : "comment.line.double-slash", "match_all": true},
+            { "key": "preceding_text", "operator" : "regex_contains", "operand": "^\\s*\\/\\/", "match_all": true}
+        ]
+    },
+    { "keys": [";"], "command": "run_macro_file", "args": {"file": "Packages/User/Move Half Page Down.sublime-macro"}, "context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}] },
+    { "keys": [":"], "command": "run_macro_file", "args": {"file": "Packages/User/Move Half Page Up.sublime-macro"}, "context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}] },
+    /*{ "keys": ["super+;"], "command": "alternative_autocomplete", "context":
+  [
+    { "key": "num_selections", "operator": "equal", "operand": 1 },
+    { "key": "overlay_visible", "operator": "equal", "operand": false },
+    { "key": "panel_visible", "operator": "equal", "operand": false }
+  ]
+},
+{ "keys": ["super+shift+;"], "command": "alternative_autocomplete", "args": {"cycle": "previous"}, "context":
+  [
+    { "key": "num_selections", "operator": "equal", "operand": 1 },
+    { "key": "overlay_visible", "operator": "equal", "operand": false },
+    { "key": "panel_visible", "operator": "equal", "operand": false }
+  ]
+},*/
+{ "keys": ["super+;"], "command": "auto_complete" },
+    { "keys": ["super+;"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+{ "keys": ["alt+;"], "command": "set_repeat_move_to_character_motion",
+        "context": [{"key": "setting.command_mode"}]
+    }
+]
+/*    { "keys": ["L"], "command": "enter_insert_mode", "args":
+        {"insert_command": "move_to", "insert_args": {"to": "hardeol"} },
+        "context": [{"key": "setting.command_mode"}]
+    },*/

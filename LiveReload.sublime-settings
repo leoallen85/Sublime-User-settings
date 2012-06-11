@@ -1,0 +1,8 @@
+{
+    "version" : "2.0.3"
+  , "port" : 35729
+  , "delay_ms" : 10
+  , "apply_js_live" : true
+  , "apply_css_live" : true
+  , "apply_images_live" : false
+}

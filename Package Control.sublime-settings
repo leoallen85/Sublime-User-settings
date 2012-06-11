@@ -1,0 +1,34 @@
+{
+	"auto_upgrade_last_run": 1339114123,
+	"hg_binary": "/usr/local/bin/hg",
+	"installed_packages":
+	[
+		"AAAPackageDev",
+		"Alignment",
+		"alternative_autocompletion",
+		"BeautifyRuby",
+		"Clipboard History",
+		"DocBlockr",
+		"Gist",
+		"Git",
+		"GitHubinator",
+		"Guard",
+		"KeymapManager",
+		"LESS",
+		"Markdown Preview",
+		"Package Control",
+		"PhpDoc",
+		"RSpec",
+		"RspecBuild",
+		"Sass",
+		"Shell Turtlestein",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"sublime-github",
+		"Sublime-HTMLPrettify",
+		"SublimeCodeIntel",
+		"SublimeExternalCommand",
+		"SublimeLinter",
+		"VintageEx"
+	]
+}

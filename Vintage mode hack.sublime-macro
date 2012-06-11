@@ -1,0 +1,16 @@
+[
+	{
+		"args":
+		{
+			"file": "Packages/Default/Delete to Hard EOL.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"characters": "	"
+		},
+		"command": "insert"
+	}
+]
