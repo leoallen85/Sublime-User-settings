@@ -1,5 +1,7 @@
 [
 	{ "keys": ["super+shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Add new line and semi-colon.sublime-macro"} },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+shift+v"], "command": "paste" },
     { "keys": ["ctrl+shift+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
     { "keys": ["super+alt+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Add semi-colon.sublime-macro"} },
 	{ "keys": ["ctrl+super+w"], "command": "close_all" },

@@ -19,5 +19,6 @@
 	],
 	"save_on_focus_lost": true,
 	"sublimelinter": false,
+	"vintage_use_clipboard": true,
 	"word_wrap": true
 }
