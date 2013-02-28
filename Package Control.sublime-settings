@@ -9,6 +9,7 @@
 		"All Autocomplete",
 		"Alternative Autocompletion",
 		"BeautifyRuby",
+		"Block Nav",
 		"Clipboard History",
 		"Clipboard Manager",
 		"CoffeeScript",
@@ -28,10 +29,12 @@
 		"Package Control",
 		"PhpDoc",
 		"Quick File Creator",
+		"QuickThemes",
 		"RSpec",
 		"RspecBuild",
 		"RubyTest",
 		"Sass",
+		"Schemr",
 		"Shell Turtlestein",
 		"SideBarEnhancements",
 		"SideBarGit",
@@ -39,8 +42,12 @@
 		"sublime-github",
 		"Sublime-HTMLPrettify",
 		"SublimeExternalCommand",
+		"sublimelint",
 		"SublimeLinter",
+		"SublimePeek",
+		"SublimeREPL",
 		"SublimeTextGitX",
+		"SubliminalCollaborator",
 		"VintageEx"
 	]
 }

@@ -1,0 +1,12 @@
+{
+	"quick_themes":
+	[
+		{
+			"color_scheme": "Packages/Color Scheme - Default/Eiffel.tmTheme"
+		},
+		{
+			"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme"
+		}
+	],
+	"quick_themes_selection": 1
+}
